@@ -30,6 +30,8 @@ public class AccountController {
     
     public static void updateAvgCaseResolutionDays(List<Id> accountIds){
 
+
+        // teste de commit
         List<Account> accountsToUpdate = new List<Account>();
         Map<Id, Integer> accountTotalCaseMap = new Map<Id, Integer>();
         Map<Id, Integer> accountTotalCaseDaysMap = new Map<Id, Integer>();
