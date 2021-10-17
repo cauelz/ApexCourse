@@ -1,0 +1,27 @@
+public class Covid19_2 {
+
+    private Integer recoveredInArea = 0;
+    public static Integer recoveredInCountry = 0;
+    
+    public Covid19_2(Integer recoveredInArea) {
+        if(recoveredInArea < 0) {
+            this.recoveredInArea = 0;
+        } else {
+            this.recoveredInArea = recoveredInArea;
+            recoveredInCountry += recoveredInArea;
+        }
+    }
+    
+    public void treatPatient() {
+        recoveredInArea++;
+        recoveredInCountry++;
+    }
+    
+    public Integer getTreated() {
+        return recoveredInArea;
+    }
+
+    public static void printTreated() {
+        System.debug('Recovered in country: ' + recoveredInCountry);
+    }
+}
